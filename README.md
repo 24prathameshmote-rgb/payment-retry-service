@@ -22,3 +22,18 @@ This is a backend project I coded using Java and Spring Boot to understand how r
 2. Open the project in your IDE
 3. Run 'PaymentRetryServiceApplication'
 4. Open   http://localhost:8081/payments   in your own browser
+
+
+## This is how the web app looks on the 'Create Payment' page.
+
+![Create Payment](images/Create_Payment.png)
+
+
+## This is how the web app looks on the 'All Payments' page. You can see it in a table format.
+
+![All_Payments](images/All_payments.png)
+
+
+## This is how the web app looks when you entered an FAILED payment attempt. It shows the retry action.
+
+![All Payments](images/All_Payments_RetryButton)
