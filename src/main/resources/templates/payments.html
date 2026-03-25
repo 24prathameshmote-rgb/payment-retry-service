@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>All Payments</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+
+<body>
+    <h1>All Payments</h1>
+
+    <a th:href="@{/payments/new}" class="btn">Create New Payment</a>
+
+    <br>
+    <br>
+
+    <div class="filter-box">
+        <label for="statusFilter">Filter by Status:</label>
+
+
+
+        <select id="statusFilter">
+            <option value="">All</option>
+            <option value="SUCCESS">SUCCESS</option>
+            <option value="FAILED">FAILED</option>
+            <option value="PERMANENTLY_FAILED">PERMANENTLY_FAILED</option>
+        </select>
+
+
+        <button type="button" class="btn" onclick="filterTable()">Filter</button>
+    </div>
+
+    <br>
+
+
+
+    <table id="paymentsTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Reference</th>
+                <th>User</th>
+                <th>Amount</th>
+                <th>Country</th>
+                <th>Payment Method</th>
+                <th>Status</th>
+                <th>Retry Count</th>
+                <th>Failure Reason</th>
+                <th>Created At</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+
+        <tbody>
+            <tr th:each="payment : ${payments}">
+                <td th:text="${payment.id}"></td>
+                <td th:text="${payment.paymentReference}"></td>
+                <td th:text="${payment.userId}"></td>
+                <td th:text="${payment.amount}"></td>
+                <td th:text="${payment.country}"></td>
+                <td th:text="${payment.paymentMethod}"></td>
+                <td th:text="${payment.status}"></td>
+                <td th:text="${payment.retryCount}"></td>
+                <td th:text="${payment.failureReason}"></td>
+                <td th:text="${payment.createdAt}"></td>
+                <td>
+                    <form th:if="${payment.status == 'FAILED'}"
+                          th:action="@{/payments/{id}/retry(id=${payment.id})}"
+                          method="post">
+                          <button type="submit">Retry</button>
+
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+    <script>
+        function filterTable()
+        {
+            var selectedStatus = document.getElementById("statusFilter").value;
+            var table = document.getElementById("paymentsTable");
+            var rows = table.getElementsByTagName("tr");
+
+
+
+
+            for (var i = 1; i < rows.length; i++)
+            {
+                var statusCell = rows[i].getElementsByTagName("td")[6];
+
+
+                if (statusCell)
+                {
+                    var statusText = statusCell.textContent.trim();
+
+
+                    if (selectedStatus === "" || statusText === selectedStatus)
+                    {
+                        rows[i].style.display = "";
+
+                    }
+
+                    else
+                    {
+                        rows[i].style.display = "none";
+                    }
+
+           
+                }   
+            }
+        }
+    </script>
+
+</body>
+</html>
