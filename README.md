@@ -1,0 +1,24 @@
+# Payment Retry Service
+
+This is a backend project I coded using Java and Spring Boot to understand how real payment systems handle failures and retries. The goal was to move beyond basic CRUD and implement logic that reflects how actual payments are processed and also validated.
+
+## Features
+- Create and view payments through a web interface
+- Retry failed payments with a limit of max 3 attempts
+- Validate based on amouunt, payment method and country
+- Status handling SUCCESS, FAILED or PERMANENTLY_FAILED
+- Unit tests covering failure situations and basic edge cases
+
+## Tech Stack
+- Java
+- Spring Boot
+- Spring Data JPA
+- H2 Database
+- Thymeleaf
+- JUnit
+
+## How can you run it
+1. Clone the repository:    git clone https://github.com/24prathameshmote-rgb/payment-retry-service.git
+2. Open the project in your IDE
+3. Run 'PaymentRetryServiceApplication'
+4. Open   http://localhost:8081/payments   in your own browser
