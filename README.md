@@ -31,9 +31,9 @@ This is a backend project I coded using Java and Spring Boot to understand how r
 
 ## This is how the web app looks on the 'All Payments' page. You can see it in a table format.
 
-![All_Payments](images/All_payments.png)
+![All_Payments](images/All_Payments.png)
 
 
 ## This is how the web app looks when you entered an FAILED payment attempt. It shows the retry action.
 
-![All Payments](images/All_Payments_RetryButton)
+![All Payments](images/All_Payments_RetryButton.png)
