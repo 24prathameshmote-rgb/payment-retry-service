@@ -5,7 +5,7 @@ This is a backend project I coded using Java and Spring Boot to understand how r
 ## Features
 - Create and view payments through a web interface
 - Retry failed payments with a limit of max 3 attempts
-- Validate based on amouunt, payment method and country
+- Validate based on amount, payment method and country
 - Status handling SUCCESS, FAILED or PERMANENTLY_FAILED
 - Unit tests covering failure situations and basic edge cases
 
