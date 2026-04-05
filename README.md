@@ -19,7 +19,7 @@ This is a backend project I coded using Java and Spring Boot to understand how r
 
 
 ## How can you run it.
-Step 1**
+Step 1
 ```bash
 git clone https://github.com/24prathameshmote-rgb/payment-retry-service.git
 ```
