@@ -17,7 +17,7 @@ This is a backend project I coded using Java and Spring Boot to understand how r
 - Thymeleaf
 - JUnit
 
-## How can you run it
+## How you can try it out
 1. Clone the repository:    git clone https://github.com/24prathameshmote-rgb/payment-retry-service.git
 2. Open the project in your IDE
 3. Run 'PaymentRetryServiceApplication'
