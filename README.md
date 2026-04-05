@@ -30,8 +30,13 @@ cd payment-retry-service
 ```
 
 Step 3
+For Windows Users
 ```bash
 .\mvnw.cmd spring-boot:run
+```
+For Linux/Mac Users
+```bash
+./mvnw spring-boot:run
 ```
 
 Run this in your browser:   http://localhost:8081/payments
