@@ -15,6 +15,8 @@ This is a backend project I coded using Java and Spring Boot to understand how r
 - Spring Data JPA
 - H2 Database
 - Thymeleaf
+- HTML
+- CSS
 - JUnit
 
 
