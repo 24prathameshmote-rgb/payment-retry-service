@@ -24,9 +24,20 @@ This is a backend project I coded using Java and Spring Boot to understand how r
 4. Open   http://localhost:8081/payments   in your own browser
 
 ## Run From Source
-1. git clone https://github.com/24prathameshmote-rgb/payment-retry-service.git
-2. cd payment-retry-service
-3. .\mvnw.cmd spring-boot:run
+Step 1
+```bash
+git clone https://github.com/24prathameshmote-rgb/payment-retry-service.git
+```
+
+Step 2
+```bash
+cd payment-retry-service
+```
+
+Step 3
+```bash
+.\mvnw.cmd spring-boot:run
+```
 
 Run this in your browser:   http://localhost:8081/payments
 
