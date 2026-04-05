@@ -23,7 +23,7 @@ This is a backend project I coded using Java and Spring Boot to understand how r
 3. Run 'PaymentRetryServiceApplication'
 4. Open   http://localhost:8081/payments   in your own browser
 
-## Run From Source
+## How can you run it.
 Step 1
 ```bash
 git clone https://github.com/24prathameshmote-rgb/payment-retry-service.git
